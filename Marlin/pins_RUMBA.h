@@ -63,12 +63,12 @@
 #define X_STEP_PIN         17
 #define X_DIR_PIN          16
 #define X_ENABLE_PIN       48
-#define X_CS_PIN           A14
+#define X_CS_PIN           59
 
 #define Y_STEP_PIN         54
 #define Y_DIR_PIN          47
 #define Y_ENABLE_PIN       55
-#define Y_CS_PIN           A15
+#define Y_CS_PIN           60
 
 #define Z_STEP_PIN         57
 #define Z_DIR_PIN          56
@@ -126,9 +126,9 @@
 #define HEATER_3_PIN        8
 #define HEATER_BED_PIN      9
 
-#ifndef FAN_PIN
-  #define FAN_PIN           7
-#endif
+//#ifndef FAN_PIN
+//  #define FAN_PIN           7
+//#endif
 #define FAN1_PIN            8
 
 //
