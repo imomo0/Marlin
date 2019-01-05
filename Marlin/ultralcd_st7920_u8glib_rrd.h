@@ -41,10 +41,11 @@
 #pragma GCC optimize (3)
 
 // If you want you can define your own set of delays in Configuration.h
-//#define ST7920_DELAY_1 DELAY_NS(0)
-//#define ST7920_DELAY_2 DELAY_NS(0)
-//#define ST7920_DELAY_3 DELAY_NS(0)
+#define ST7920_DELAY_1 DELAY_NS(50)
+#define ST7920_DELAY_2 DELAY_NS(188)
+#define ST7920_DELAY_3 DELAY_NS(50)
 
+/*
 #if F_CPU >= 20000000
   #define CPU_ST7920_DELAY_1 DELAY_NS(0)
   #define CPU_ST7920_DELAY_2 DELAY_NS(0)
@@ -72,6 +73,7 @@
 #else
   #error "No valid condition for delays in 'ultralcd_st7920_u8glib_rrd.h'"
 #endif
+*/
 
 #ifndef ST7920_DELAY_1
   #define ST7920_DELAY_1 CPU_ST7920_DELAY_1

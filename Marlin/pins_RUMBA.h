@@ -73,11 +73,12 @@
 #define Z_STEP_PIN         57
 #define Z_DIR_PIN          56
 #define Z_ENABLE_PIN       62
-#define Z_CS_PIN           A10
+#define Z_CS_PIN           64
 
 #define E0_STEP_PIN        23
 #define E0_DIR_PIN         22
 #define E0_ENABLE_PIN      24
+#define E0_CS_PIN          63
 
 #define E1_STEP_PIN        26
 #define E1_DIR_PIN         25
@@ -127,10 +128,10 @@
 #define HEATER_3_PIN        8
 #define HEATER_BED_PIN      9
 
-//#ifndef FAN_PIN
-//  #define FAN_PIN           7
-//#endif
-#define FAN1_PIN            8
+#ifndef FAN_PIN
+  #define FAN_PIN           8
+#endif
+//#define FAN1_PIN            8
 
 //
 // Misc. Functions
@@ -139,7 +140,8 @@
 #define LED_PIN            13
 #define PS_ON_PIN          45
 #define KILL_PIN           46
-#define CASE_LIGHT_PIN     45
+//#define CASE_LIGHT_PIN     45 // Gamle CASE_LIGHT
+#define CASE_LIGHT_PIN     6 // HE2 er vifte for kjøling elektronikk
 
 //
 // M3/M4/M5 - Spindle/Laser Control
