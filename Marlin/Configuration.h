@@ -608,7 +608,7 @@
  * Override with M92
  *                                      X, Y, Z, E0 [, E1[, E2[, E3[, E4]]]]
  */
-#define DEFAULT_AXIS_STEPS_PER_UNIT   { 80, 80, 400, 105.55 }
+#define DEFAULT_AXIS_STEPS_PER_UNIT   { 80, 80, 400, 137.67 }
 
 /**
  * Default Max Feed Rate (mm/s)
@@ -634,7 +634,7 @@
  *   M204 T    Travel Acceleration
  */
 #define DEFAULT_ACCELERATION          1200    // X, Y, Z and E acceleration for printing moves
-#define DEFAULT_RETRACT_ACCELERATION  3000    // E acceleration for retracts
+#define DEFAULT_RETRACT_ACCELERATION  3000    // E acceleration for retracts  //3000
 #define DEFAULT_TRAVEL_ACCELERATION   2000    // X, Y, Z acceleration for travel (non printing) moves
 
 /**
@@ -778,7 +778,7 @@
  */
 #define X_PROBE_OFFSET_FROM_EXTRUDER 28  // X offset: -left  +right  [of the nozzle]
 #define Y_PROBE_OFFSET_FROM_EXTRUDER 10  // Y offset: -front +behind [the nozzle]
-#define Z_PROBE_OFFSET_FROM_EXTRUDER 0   // Z offset: -below +above  [the nozzle] // -0,95
+#define Z_PROBE_OFFSET_FROM_EXTRUDER -0.35   // Z offset: -below +above  [the nozzle] // -0,4 for lav, -0.3 for høy
 
 // Certain types of probes need to stay away from edges
 #define MIN_PROBE_EDGE 10
