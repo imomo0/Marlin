@@ -350,11 +350,11 @@
 // When temperature exceeds max temp, your heater will be switched off.
 // This feature exists to protect your hotend from overheating accidentally, but *NOT* from thermistor short/failure!
 // You should use MINTEMP for thermistor short/failure protection.
-#define HEATER_0_MAXTEMP 275
-#define HEATER_1_MAXTEMP 275
-#define HEATER_2_MAXTEMP 275
-#define HEATER_3_MAXTEMP 275
-#define HEATER_4_MAXTEMP 275
+#define HEATER_0_MAXTEMP 285
+#define HEATER_1_MAXTEMP 285
+#define HEATER_2_MAXTEMP 285
+#define HEATER_3_MAXTEMP 285
+#define HEATER_4_MAXTEMP 285
 #define BED_MAXTEMP 150
 
 //===========================================================================
@@ -608,7 +608,7 @@
  * Override with M92
  *                                      X, Y, Z, E0 [, E1[, E2[, E3[, E4]]]]
  */
-#define DEFAULT_AXIS_STEPS_PER_UNIT   { 80, 80, 400, 137.67 }
+#define DEFAULT_AXIS_STEPS_PER_UNIT   { 80, 80, 400, 135.06 }
 
 /**
  * Default Max Feed Rate (mm/s)
@@ -778,7 +778,7 @@
  */
 #define X_PROBE_OFFSET_FROM_EXTRUDER 28  // X offset: -left  +right  [of the nozzle]
 #define Y_PROBE_OFFSET_FROM_EXTRUDER 10  // Y offset: -front +behind [the nozzle]
-#define Z_PROBE_OFFSET_FROM_EXTRUDER -0.35   // Z offset: -below +above  [the nozzle] // -0,4 for lav, -0.3 for høy
+#define Z_PROBE_OFFSET_FROM_EXTRUDER 0   // Z offset: -below +above  [the nozzle] // -0,4 for lav, -0.35 for høy
 
 // Certain types of probes need to stay away from edges
 #define MIN_PROBE_EDGE 10
